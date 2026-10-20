@@ -16,6 +16,6 @@ Square brackets are stripped from the title, because Slack can't parse them insi
 ## Use
 
 - Click **Copy link** next to the PR title, or
-- Press `Alt+Shift+C` on a PR page (change it at `chrome://extensions/shortcuts`).
+- Press `Alt+Shift+C` (Windows), `Option+Shift+C` (MacOS) on a PR page (change it at `chrome://extensions/shortcuts`).
 
 After editing the code, click the reload icon on the extension card and refresh the GitHub tab.
