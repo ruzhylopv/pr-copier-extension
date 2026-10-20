@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "PR Link Copier",
+  "version": "1.0.0",
+  "description": "Copy a GitHub pull request as a Markdown link: [Title](url).",
+  "permissions": ["clipboardWrite"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "PR Link Copier",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "copy-pr-link": {
+      "suggested_key": {
+        "default": "Alt+Shift+C"
+      },
+      "description": "Copy current PR as a Markdown link"
+    }
+  }
+}

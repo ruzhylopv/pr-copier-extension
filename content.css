@@ -1,0 +1,19 @@
+.pr-link-copier-btn {
+  margin-left: 8px;
+  padding: 3px 12px;
+  vertical-align: middle;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--button-default-fgColor-rest, #24292f);
+  background-color: var(--button-default-bgColor-rest, #f6f8fa);
+  border: 1px solid var(--button-default-borderColor-rest, rgba(31, 35, 40, 0.15));
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pr-link-copier-btn:hover {
+  background-color: var(--button-default-bgColor-hover, #f3f4f6);
+}
